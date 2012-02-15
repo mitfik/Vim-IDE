@@ -1,0 +1,3 @@
+\documentclass[ignorenonframetext]{beamer}
+\usetheme{Boadilla}
+\input{<++>.tex}

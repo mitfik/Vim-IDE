@@ -21,6 +21,7 @@ set statusline=%y[%{&ff}]\ \ ASCII=\%03.3b,HEX=\%02.2B\ %=%m%r%h%w\ %1*%F%*\ %l:
 set laststatus=2		" zawsze pokazuj linię statusu
 set fo=tcrqn			" opcje wklejania (jak maja być tworzone wcięcia itp.)
 set hidden			" nie wymagaj zapisu gdy przechodzisz do nowego bufora
+set expandtab   " zamiana tab na spacje
 set tabstop=2 			" ustawienie wielkości taba na 2 spacje
 set tags+=./stl_tags		" tip 931
 set foldtext=MojFoldText()	" tekst po zwinięciu zakładki

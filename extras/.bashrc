@@ -110,4 +110,7 @@ tmp=${PWD%/*/*/*};
 [ ${#tmp} -gt 0 -a "$tmp" != "$PWD" ] && echo ${PWD:${#tmp}+1} || echo $PWD;
 }
 
+# local
 export PS1='\[\033[0;32m\]\u@\h \[\033[33m\]$(PWD)\[\033[0m\]\[\e[1;32m\] $(__git_ps1 " (%s) ")\$\[\e[0m\] ';
+# server or root 
+export PS1='\[\033[0;31m\]\u@\h \[\033[33m\]$(PWD)\[\033[0m\]\[\e[1;32m\] $(__git_ps1 " (%s) ")\$\[\e[0m\] ';

@@ -23,6 +23,7 @@ set fo=tcrqn			" opcje wklejania (jak maja być tworzone wcięcia itp.)
 set hidden			" nie wymagaj zapisu gdy przechodzisz do nowego bufora
 set expandtab   " zamiana tab na spacje
 set tabstop=2 			" ustawienie wielkości taba na 2 spacje
+set shiftwidth=2
 set tags+=./stl_tags		" tip 931
 set foldtext=MojFoldText()	" tekst po zwinięciu zakładki
 set foldminlines=3		" minimum 3 linie aby powstał fold

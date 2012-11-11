@@ -24,6 +24,7 @@ set hidden			" nie wymagaj zapisu gdy przechodzisz do nowego bufora
 set expandtab   " zamiana tab na spacje
 set tabstop=2 			" ustawienie wielkości taba na 2 spacje
 set shiftwidth=2
+set tw=80
 set tags+=./stl_tags		" tip 931
 set foldtext=MojFoldText()	" tekst po zwinięciu zakładki
 set foldminlines=3		" minimum 3 linie aby powstał fold
@@ -55,7 +56,7 @@ endif
 " automatyczne rozpoznawanie typu pliku, ladowanie specyficznego, dla danego typu, pluginu (ftplugin.vim, indent.vim):
 
 
-" latex 
+" latex
 
 filetype plugin on " invoke latex-suite when you open a tex file
 set shellslash
@@ -76,7 +77,8 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-
+" Autoremoving all trialling whitespace during save
+autocmd BufWritePre * :%s/\s\+$//e
 
 autocmd BufReadPost *
  \ if line("'\"") > 1 && line("'\"") <= line("$") |
@@ -90,3 +92,4 @@ let g:Tex_ViewRule_pdf='xpdf'
 
 filetype plugin on
 set ofu=syntaxcomplete#Complete
+

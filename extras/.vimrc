@@ -36,6 +36,10 @@ let php_sql_query = 1		" podkreślanie składni SQL w PHP
 let php_htmlInStrings = 1	" podkreślanie składni HTML w PHP
 let python_highlight_all = 1
 
+" MACROS
+" reformating html
+let @h=':%s/>\s*</>\r</g:set ft=htmlggVG='
+
 
 behave xterm
 

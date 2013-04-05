@@ -7,7 +7,11 @@
 
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
-HISTCONTROL=ignoredups:ignorespace
+HISTCONTROL=ignoredups:ignorespace:erasedups
+
+# After each command, save and reload history.
+# This allow to have access to all history instantly in all open terminals
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 # append to the history file, don't overwrite it
 shopt -s histappend

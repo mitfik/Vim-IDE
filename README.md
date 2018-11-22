@@ -7,8 +7,8 @@ and then:
 
 symlink .vimrc:
 
-   ln -s ~/.vim/extras/.vimrc ~/.vimrc
+    ln -s ~/.vim/extras/.vimrc ~/.vimrc
 
 For managing plugins using Vundle (included as submodule)
 
-   git submodule update --recursive --remote
+    git submodule update --recursive --remote

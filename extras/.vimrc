@@ -35,6 +35,20 @@ set spelllang=pl
 let php_sql_query = 1		" podkreślanie składni SQL w PHP
 let php_htmlInStrings = 1	" podkreślanie składni HTML w PHP
 let python_highlight_all = 1
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+""""""" Plugins section start
+
+Plugin 'leafgarland/typescript-vim.git'
+
+""""""" Plugins section end
+
+cal vundle#end()
+filetype plugin indent on
+
 
 " MACROS
 " reformating html

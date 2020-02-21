@@ -11,4 +11,10 @@ symlink .vimrc:
 
 For managing plugins using Vundle (included as submodule)
 
+First time:
+
+    git submodule update --init --recursive
+    
+To update
+
     git submodule update --recursive --remote
